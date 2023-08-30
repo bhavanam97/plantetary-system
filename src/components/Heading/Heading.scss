@@ -1,0 +1,52 @@
+@import '../../common/config.scss';
+
+.app-heading {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid $c-primary-400;
+    background: $c-neutral-white;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &__text-container {
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        font-family: $ff-poppins;
+        font-weight: 600;
+
+        @media #{$screen-tablet-min} {
+            column-gap: 16px;
+        }
+    }
+
+    &__label {
+        color: $c-neutral-800;
+        font-family: $ff-poppins;
+        font-size: 14px;
+
+        @media #{$screen-tablet-min} {
+            font-size: 20px;
+        }
+    }
+
+    &__count {
+        color: $c-neutral-300;
+        font-size: 12px;
+
+        @media #{$screen-tablet-min} {
+            font-size: 18px;
+        }
+    }
+
+    &__more-icon {
+        align-self: center;
+    }
+
+    @media #{$screen-tablet-min} {
+        padding: 16px 24px;
+        border-width: 2px;
+    }
+}

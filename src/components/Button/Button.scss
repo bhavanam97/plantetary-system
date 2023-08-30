@@ -1,0 +1,25 @@
+@import '../../common/config.scss';
+
+.planet-button {
+    width: 100%;
+    padding: 6px 14px;
+    text-align: center;
+    border: 1px solid $c-neutral-50;
+    color: $c-neutral-900;
+    font-family: $ff-plus-jakarta-sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
+    &:hover, &:active{
+      background-color: $c-neutral-900;
+      color: $c-neutral-white;
+    }
+
+    @media #{$screen-tablet-min} {
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+}

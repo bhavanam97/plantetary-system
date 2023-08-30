@@ -1,0 +1,112 @@
+@import '../../common/config.scss';
+
+.planet-card {
+    padding: 16px;
+    background-color: $c-neutral-white;
+    border-radius: 4px;
+    border: 1px solid $c-neutral-50;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 255px;
+
+    &__title-section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .title {
+            &__container{
+                display: flex;
+                column-gap: 10px;
+            }
+
+            &__img {
+                width: 36px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border: 1px solid $c-neutral-50;
+
+                @media #{$screen-tablet-min} {
+                    width: 60px;
+                }
+            }
+
+            &_desc {
+                font-family: $ff-poppins;
+            }
+
+            &__name {
+                color: $c-neutral-black;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 120%;
+
+                @media #{$screen-tablet-min} {
+                    font-size: 20px;
+                }
+            }
+
+            &__timeline {
+                color: $c-neutral-500;
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 15px; 
+
+                @media #{$screen-tablet-min} {
+                    padding-top: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 4px;
+        row-gap: 8px;
+
+        @media #{$screen-tablet-min} {
+            row-gap: 12px;
+        }
+
+        .description {
+            width: 71px;
+
+            @media #{$screen-tablet-min} {
+                width: 100px;
+            }
+        }
+
+        .label {
+            color: $c-neutral-300;
+            font-family: $ff-plus-jakarta-sans;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            text-transform: uppercase;
+
+            @media #{$screen-tablet-min} {
+                font-size: 16px;
+            }
+        }
+        .value {
+            color: $c-neutral-900;
+            font-family: $ff-plus-jakarta-sans;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 180%;
+
+            @media #{$screen-tablet-min} {
+                font-size: 20px;
+            }
+        }
+    }
+
+    @media #{$screen-tablet-min} {
+        width: auto;
+        row-gap: 16px;
+    }
+}

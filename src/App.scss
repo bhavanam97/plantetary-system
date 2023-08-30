@@ -1,0 +1,13 @@
+@import './common/config.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    background-color: $c-f7-background;
+    min-height: 100vh;
+    position: relative;
+}

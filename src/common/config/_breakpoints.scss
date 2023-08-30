@@ -1,0 +1,20 @@
+$screen-sm-min: 415px;
+$screen-md-min: 768px;
+$screen-lg-min: 990px;
+$screen-xl-min: 1200px;
+$screen-2xl-min: 1366px;
+$screen-xs-max: ($screen-sm-min - 1); // 414px
+$screen-sm-max: ($screen-md-min - 1); // 767px
+$screen-md-max: ($screen-lg-min - 1); // 889px
+
+$screen: 'only screen';
+
+$screen-mobile: '#{$screen} and (max-width: #{$screen-sm-max})';
+$screen-mobile-mini: '#{$screen} and (max-width: #{$screen-xs-max})';
+$screen-mobile-min: '#{$screen} and (min-width: #{$screen-sm-min})';
+$screen-tablet-min: '#{$screen} and (min-width: #{$screen-md-min})';
+$screen-tablet-max: '#{$screen} and (max-width: #{$screen-md-max})';
+$screen-tablet-only: '#{$screen} and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})';
+$screen-desktop: '#{$screen} and (min-width: #{$screen-lg-min})';
+$screen-desktop-xl: '#{$screen} and (min-width: #{$screen-xl-min})';
+$screen-desktop-2xl: '#{$screen} and (min-width: #{$screen-2xl-min})';
